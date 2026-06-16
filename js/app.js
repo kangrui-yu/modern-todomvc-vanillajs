@@ -6,6 +6,7 @@ const Todos = new TodoStore("todo-modern-vanillajs");
 const App = {
 	$: {
 		input: document.querySelector('[data-todo="new"]'),
+		prioritySelect: document.querySelector('[data-todo="priority"]'),
 		toggleAll: document.querySelector('[data-todo="toggle-all"]'),
 		clear: document.querySelector('[data-todo="clear-completed"]'),
 		list: document.querySelector('[data-todo="list"]'),

@@ -34,9 +34,10 @@ export const TodoStore = class extends EventTarget {
 		this.dispatchEvent(new CustomEvent("save"));
 	}
 	// MUTATE methods
-	add({ title }) {
+	add({ title, priority = "Medium" }) {
 		this.todos.push({
 			title,
+			priority,
 			completed: false,
 			id: "id_" + Date.now(),
 		});
